@@ -1,0 +1,15 @@
+esprit_test_homepage:
+    path:     /Test
+    defaults: { _controller: EspritTestBundle:Default:index }
+esprit_test_list:
+    path:     /List
+    defaults: { _controller: EspritTestBundle:Default:List }
+esprit_test_add:
+  path:     /Add
+  defaults: { _controller: EspritTestBundle:Default:Ajout }
+esprit_test_delete:
+  path:     /Delete/{id}
+  defaults: { _controller: EspritTestBundle:Default:delete }
+esprit_test_update:
+  path:     /update/{id}
+  defaults: { _controller: EspritTestBundle:Default:Update }

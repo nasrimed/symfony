@@ -1,0 +1,20 @@
+<h3>List Modele</h3>
+<a href="{{ path('esprit_test_add') }}">Ajouter</a>
+<table border="2">
+    <tr>
+        <th>Id</th>
+        <th>Marque</th>
+        <th>pays</th>
+        <th>Supprimer</th>
+        <th>Mise a jour</th>
+    </tr>
+    {% for modele in modeles %}
+    <tr>
+        <td>{{ modele.id }}</td>
+        <td>{{ modele.libelle }}</td>
+        <td>{{ modele.pays }}</td>
+        <td><a href="{{ path('esprit_test_delete',{'id':modele.id}) }}">Supprimer</a></td>
+        <td><a href="{{ path('esprit_test_update',{'id':modele.id}) }}">Mise a jour</a></td>
+    </tr>
+{% endfor %}
+</table>
