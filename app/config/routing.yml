@@ -1,0 +1,7 @@
+esprit_test:
+    resource: "@EspritTestBundle/Resources/config/routing.yml"
+    prefix:   /Parc
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
