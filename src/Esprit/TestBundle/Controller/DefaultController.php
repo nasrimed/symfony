@@ -6,6 +6,7 @@ use Esprit\TestBundle\Entity\Modele;
 use Esprit\TestBundle\Form\ModeleType;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 
 class DefaultController extends Controller
 {
@@ -68,6 +69,16 @@ class DefaultController extends Controller
         return $this->render('EspritTestBundle:Default:update.html.twig',array("form"=>$Form->createView()));
 
 
+    }
+    /**
+     * @Route("/books/display", name="app_book_display")
+     *
+     */
+    public function displayAction() {
+        $bk = $this->getDoctrine()
+            ->getRepository('EspritTestBundle:Book')
+            ->findAll();
+        return $this->render('EspritTestBundle:Default:display.html.twig', array('data' => $bk));
     }
 
 }
