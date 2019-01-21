@@ -13,6 +13,3 @@ esprit_test_delete:
 esprit_test_update:
   path:     /update/{id}
   defaults: { _controller: EspritTestBundle:Default:Update }
-app_book_display:
-  path:     /books/display
-  defaults: { _controller: EspritTestBundle:Default:display }

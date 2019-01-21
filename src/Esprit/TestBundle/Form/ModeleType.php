@@ -16,8 +16,8 @@ class ModeleType extends AbstractType
     {
         $builder
             ->add('libelle')
-            ->add('pays')
-            ->add('save',SubmitType::class);
+            ->add('pays');
+
     }
     
     /**

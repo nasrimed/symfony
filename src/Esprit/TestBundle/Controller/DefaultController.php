@@ -6,7 +6,7 @@ use Esprit\TestBundle\Entity\Modele;
 use Esprit\TestBundle\Form\ModeleType;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\Routing\Annotation\Route;
 
 class DefaultController extends Controller
 {
