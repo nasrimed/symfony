@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    {% block stylesheets %}{% endblock %}
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    <!-- start: CSS -->
+    <link id="bootstrap-style" href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/bootstrap-responsive.min.css') }}" rel="stylesheet">
+    <link id="base-style" href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link id="base-style-responsive" href="{{ asset('css/style-responsive.css') }}" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
+    <!-- end: CSS -->
+</head>
+<body>
+
+
+<div class="container-fluid-full">
+    <div class="row-fluid">
+
+
+        <!-- start: Content -->
+        <div id="content" class="span10">
+
+            {% block body %}
+
+
+            {% endblock %}
+
+
+
+        </div><!--/.fluid-container-->
+
+        <!-- end: Content -->
+    </div><!--/#content.span10-->
+</div><!--/fluid-row-->
+
+<div class="clearfix"></div>
+
+<footer>
+
+</footer>
+
+
+{% block javascripts %}
+
+    <!-- start: JavaScript-->
+    <script src="{{ asset('js/jquery-1.9.1.min.js') }}"></script>
+    <script src="{{ asset('js/jquery-migrate-1.0.0.min.js') }}"></script>
+    <script src="{{ asset('js/jquery-ui-1.10.0.custom.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.ui.touch-punch.js') }}"></script>
+    <script src="{{ asset('js/modernizr.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.cookie.js') }}"></script>
+    <script src="{{ asset('js/fullcalendar.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('js/excanvas.js') }}"></script>
+    <script src="{{ asset('js/jquery.flot.js') }}"></script>
+    <script src="{{ asset('js/jquery.flot.pie.js') }}"></script>
+    <script src="{{ asset('js/jquery.flot.stack.js') }}"></script>
+    <script src="{{ asset('js/jquery.flot.resize.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.chosen.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.uniform.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.cleditor.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.noty.js') }}"></script>
+    <script src="{{ asset('js/jquery.elfinder.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.raty.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.iphone.toggle.js') }}"></script>
+    <script src="{{ asset('js/jquery.uploadify-3.1.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.gritter.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.imagesloaded.js') }}"></script>
+    <script src="{{ asset('js/jquery.masonry.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.knob.modified.js') }}"></script>
+    <script src="{{ asset('js/jquery.sparkline.min.js') }}"></script>
+    <script src="{{ asset('js/counter.js') }}"></script>
+    <script src="{{ asset('js/retina.js') }}"></script>
+    <script src="{{ asset('js/custom.js') }}"></script>
+    <script src="{{ asset('js/tinymce/tinymce.min.js') }}"></script>
+
+
+    <link type="text/css" rel="stylesheet" href="{{ asset('css/themes/smoothness/jquery-ui-1.7.1.custom.css') }}" />
+    <link type="text/css" href="{{ asset('css/ui.multiselect.css') }}" rel="stylesheet" />
+
+
+    <script type="text/javascript" src="{{ asset('js/plugins/localisation/jquery.localisation-min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/plugins/tmpl/jquery.tmpl.1.1.1.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/plugins/blockUI/jquery.blockUI.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/ui.multiselect.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/page.js') }}"></script>
+    <script type="text/javascript">
+        $(function () {
+            $.localise('ui.multiselect', {/*language: 'es',/* */ path: 'js/locale/'});
+
+            // local
+            $("#efebundle_bailleurfond_typeactiviteid").multiselect();
+            $("#efebundle_bailleurfond_programmeformationid").multiselect();
+            $("#efebundle_formateur_domaineetudeid").multiselect();
+            $("#efebundle_formateur_langueid").multiselect();
+            $("#efebundle_formateur_typeformationid").multiselect();
+            $("#efebundle_partenaireemployeur_partenaireid_gouvernoratetudeid").multiselect();
+            $("#efebundle_partenaireemployeur_partenaireid_programmeformationid").multiselect();
+            $("#efebundle_partenaireeducatif_partenaireid_gouvernoratetudeid").multiselect();
+            $("#efebundle_partenaireeducatif_partenaireid_programmeformationid").multiselect();
+            $("#efebundle_partenaireautre_partenaireid_gouvernoratetudeid").multiselect();
+            $("#efebundle_partenaireautre_partenaireid_programmeformationid").multiselect();
+            $("#efebundle_partenaireemployeur_secteuractiviteid").multiselect();
+            $("#efebundle_projet_programmeformationid").multiselect();
+            $("#efebundle_projet_bailleurfondid").multiselect();
+            $("#efebundle_activite_activitesupid_projetid").multiselect();
+            $("#efebundle_activite_activitesupid_formateurid").multiselect();
+            $("#efebundle_activite_activitesupid_partenaireid").multiselect();
+
+            $("#efebundle_sessionformation_activitesupid_projetid").multiselect();
+            $("#efebundle_sessionformation_activitesupid_formateurid").multiselect();
+            $("#efebundle_sessionformation_activitesupid_partenaireid").multiselect();
+            $("#efebundle_sessionformation_moduleformationid").multiselect();
+            $("#efebundle_sessionaccompagnement_partenaireid").multiselect();
+
+            $("#efebundle_partenaireeducatif_domaineetudeid").multiselect();
+            $("#efebundle_projet_gouvernoratetudeid").multiselect();
+            $("#efebundle_activite_gouvernoratetudeid").multiselect();
+            $("#efebundle_sessionaccompagnement_formateurid").multiselect();
+            $("#efebundle_sessionaccompagnement_gouvernoratetudeid").multiselect();
+
+            // only if the function is available...
+            if ($.fn.themeswitcher) {
+                $('#switcher')
+                    .before('<h4>Use the themeroller to dynamically change look and feel</h4>')
+                    .themeswitcher();
+            }
+        });
+    </script>
+
+
+    <script>
+        $(function () {
+            $(".date").datepicker({
+                dateFormat: 'yy-mm-dd',
+                showOn: "button",
+                buttonImage: "{{ asset('img/calendar.png') }}",
+                buttonImageOnly: true,
+                changeMonth: true,
+                changeYear: true,
+                yearRange: "1900:2100"
+            }).attr("readonly", "readonly");
+        });
+
+        dateInput.addEventListener('keydown', function (event) {
+            if (event.keyIdentifier == "Down") {
+                event.preventDefault()
+            }
+        }, false);
+
+
+        /* French initialisation for the jQuery UI date picker plugin. */
+        /* Written by Keith Wood (kbwood{at}iinet.com.au),
+         Stéphane Nahmani (sholby@sholby.net),
+         Stéphane Raimbault <stephane.raimbault@gmail.com> */
+        (function (factory) {
+            if (typeof define === "function" && define.amd) {
+                // AMD. Register as an anonymous module.
+                define(["../datepicker"], factory);
+            } else {
+                // Browser globals
+                factory(jQuery.datepicker);
+            }
+        }(function (datepicker) {
+            datepicker.regional['fr'] = {
+                firstDay: 1,
+                isRTL: false,
+                showMonthAfterYear: false,
+                yearSuffix: ''};
+            datepicker.setDefaults(datepicker.regional['fr']);
+            return datepicker.regional['fr'];
+        }));
+
+    </script>
+
+    <style type="text/css">
+        .multiselect {
+            width: 600px;
+            height: 150px;
+            margin-top: 20px;
+        }
+    </style>
+    <!-- end: JavaScript-->
+
+{% endblock %}
+
+
+</body>
+</html>

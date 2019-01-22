@@ -2,10 +2,13 @@
 
 namespace Esprit\TestBundle\Form;
 
+use Esprit\TestBundle\Form\Type\DateTimePickerType;
 use Symfony\Component\Form\AbstractType;
-use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+
 
 class ModeleType extends AbstractType
 {
@@ -16,7 +19,21 @@ class ModeleType extends AbstractType
     {
         $builder
             ->add('libelle')
-            ->add('pays');
+            ->add('pays')
+            ->add('agent')
+            ->add('emailagent', null, [
+                'attr' => ['autofocus' => true],
+                'label' => 'Email',
+            ])
+
+            ->add('publishedAt', DateTimePickerType::class, [
+                'label' => 'label.published_at',
+                'help' => 'help.post_publication',
+            ])
+            ->add('description', TextareaType::class, [
+        'attr' => ['class' => 'tinymce'],
+    ]);
+        ;
 
     }
     

@@ -1,0 +1,15 @@
+<h2>Books database application!</h2>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Author</th>
+        <th>Price</th>
+    </tr>
+    {% for x in data %}
+        <tr>
+            <td>{{ x.Name }}</td>
+            <td>{{ x.Author }}</td>
+            <td>{{ x.Price }}</td>
+        </tr>
+    {% endfor %}
+</table>

@@ -20,6 +20,8 @@
                             <th>Id</th>
                             <th>Marque</th>
                             <th>pays</th>
+                            <th>Agent</th>
+                            <th>Email </th>
                             <th>Supprimer</th>
                             <th>Mise a jour</th>
                         </tr>
@@ -30,6 +32,8 @@
                                 <td>{{ modele.id }}</td>
                                 <td>{{ modele.libelle }}</td>
                                 <td>{{ modele.pays }}</td>
+                                <td>{{ modele.agent }}</td>
+                                <td>{{ modele.emailagent }}</td>
 
                                 <td>
                                     <a class="btn btn-danger" href="{{ path('esprit_test_delete',{'id':modele.id}) }}">Delete</a>
